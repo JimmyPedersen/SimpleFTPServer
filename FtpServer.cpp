@@ -779,7 +779,7 @@ bool FtpServer::processCommand()
       }
 
       data.stop();
-      data.clear();
+      data.flush();
 
       DEBUG_PRINT(F("open/create "));
       DEBUG_PRINTLN(open);
